@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orhan Ghazi - Web Series</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+    }
+
+    header {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.8);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      color: gold;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    header nav a:hover {
+      color: gold;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), #0b0b0b),
+        url("https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 60px;
+    }
+
+    .hero h2 {
+      font-size: 60px;
+      margin: 0;
+      color: gold;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: gold;
+      color: black;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: black;
+    }
+
+    section {
+      padding: 70px 60px;
+    }
+
+    section h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: gold;
+    }
+
+    .episodes, .cast, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161616;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      border: 1px solid gold;
+    }
+
+    .card h4 {
+      margin: 0;
+      color: gold;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      border: 2px solid gold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      .hero {
+        padding: 0 20px;
+      }
+
+      .hero h2 {
+        font-size: 40px;
+      }
+    }
+  </style>
+  <nav> <a href="index.html">Home</a>
+  <a href="episodes.html">Episodes</a></nav>
+</head>
+
+<body>
+
+  <header>
+    <h1>ORHAN GHAZI</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#episodes">Episodes</a>
+      <a href="#cast">Cast</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Orhan Ghazi</h2>
+    <p>
+      A legendary historical web series based on the rise of the Ottoman Empire.
+      Witness the battles, leadership, and bravery of Orhan Ghazi.
+    </p>
+    <a class="btn" href="#episodes">▶ Watch Episodes</a>
+  </div>
+
+  <section id="about">
+    <h3>About The Series</h3>
+    <p>
+      Orhan Ghazi is a historical drama series showing the journey of the great
+      Ottoman leader Orhan Ghazi. The series includes epic war scenes,
+      political strategies, and emotional family moments.
+    </p>
+  </section>
+
+  <section id="episodes">
+    <h3>Episodes</h3>
+    <div class="episodes">
+      <div class="card">
+        <h4>Episode 1</h4>
+        <p>The rise of Orhan Ghazi begins and the empire faces its first challenges.</p>
+      </div>
+
+      <div class="card">
+        <h4>Episode 2</h4>
+        <p>Orhan prepares his army and faces enemies in an epic battle.</p>
+      </div>
+
+      <div class="card">
+        <h4>Episode 3</h4>
+        <p>New alliances are formed and betrayal shakes the empire.</p>
+      </div>
+
+      <div class="card">
+        <h4>Episode 4</h4>
+        <p>The empire expands and Orhan Ghazi becomes a powerful leader.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cast">
+    <h3>Main Cast</h3>
+    <div class="cast">
+      <div class="card">
+        <h4>Orhan Ghazi</h4>
+        <p>Main hero and leader of the Ottoman Empire.</p>
+      </div>
+
+      <div class="card">
+        <h4>Osman Ghazi</h4>
+        <p>Father of Orhan and founder of the Ottoman Empire.</p>
+      </div>
+
+      <div class="card">
+        <h4>Nilüfer Hatun</h4>
+        <p>Wife of Orhan Ghazi and an important character in the empire.</p>
+      </div>
+
+      <div class="card">
+        <h4>Warriors</h4>
+        <p>Brave soldiers and commanders who fight for the empire.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=800&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Orhan Ghazi Web Series | Designed for Website</p>
+  </footer>
+
+</body>
+</html>
