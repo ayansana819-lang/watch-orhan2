@@ -1,168 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orhan Ghazi - Web Series</title>
-
- <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0b0b0b;
-    color: white;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: #111;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9999; /* VERY IMPORTANT */
-  }
-
-  header h1 {
-    color: gold;
-    margin: 0;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-  }
-
-  nav a:hover {
-    color: gold;
-  }
-
-  .dropdown {
-    position: relative;
-  }
-
-  .dropbtn {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    cursor: pointer;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #222;
-    min-width: 200px;
-    border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    z-index: 9999; /* VERY IMPORTANT */
-  }
-
-  .dropdown-content a {
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
-  }
-
-  .dropdown-content a:hover {
-    background: gold;
-    color: black;
-  }
-
-  main {
-    padding-top: 120px;
-  }
-</style>
-
-</head>
-<script>
-  const btn = document.getElementById("dropbtn");
-  const menu = document.getElementById("dropdownMenu");
-
-  btn.addEventListener("click", function(e) {
-    e.preventDefault();
-    menu.style.display =
-      menu.style.display === "block" ? "none" : "block";
-  });
-
-  window.addEventListener("click", function(e) {
-    if (!e.target.matches('#dropbtn')) {
-      menu.style.display = "none";
+  <title>Orhan Ghazi - Episodes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      font-family: Arial, sans-serif;
+      color: white;
     }
-  });
-</script>
+
+    header {
+      background: black;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: gold;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .episode-card {
+      background: #222;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 10px;
+      transition: 0.3s;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .episode-card:hover {
+      background: gold;
+      color: black;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
 
 <body>
 
 <header>
-  <h1>ORHAN GHAZI</h1>
-  <nav>
-   <div class="dropdown" id="dropdown">
-  <a href="#" class="dropbtn" id="dropbtn">Episodes ▼</a>
-
-  <div class="dropdown-content" id="dropdownMenu">
-    <a href="https://pixeldrain.com/u/aw4WWwi2">Episode 1</a>
-    <a href="https://pixeldrain.com/u/m8aN2fdk">Episode 2</a>
-    <a href="https://pixeldrain.com/u/ABqgMoN4">Episode 3</a>
-    <a href="https://pixeldrain.com/u/5ajgeN2p">Episode 4</a>
-    <a href="https://pixeldrain.com/u/sqTp9fSW">Episode 5</a>
-    <a href="https://pixeldrain.com/u/15ayux7A">Episode 6</a>
-    <a href="https://pixeldrain.com/u/dbVf8uPU">Episode 7</a>
-    <a href="https://pixeldrain.com/u/V1e9qSsT">Episode 8</a>
-    <a href="https://pixeldrain.com/u/jLKZUd15">Episode 9</a>
-    <a href="https://pixeldrain.com/u/1PDKqwYe">Episode 10</a>
-    <a href="https://pixeldrain.com/u/1hP9wJdK">Episode 11</a>
-    <a href="https://pixeldrain.com/u/zJzdGW9f">Episode 12</a>
-    <a href="https://pixeldrain.com/u/B2DN3y7r">Episode 13</a>
-    <a href="https://pixeldrain.com/u/1nvNXENs">Episode 14</a>
-  </div>
-</div>
-
-    <a href="cast.html">Cast</a>
-    <a href="gallery.html">Gallery</a>
-  </nav>
+  ORHAN GHAZI - Season 1
 </header>
 
-<main>
-  <div class="hero">
-    <h2>Orhan Ghazi</h2>
-    <p>Watch the legendary historical web series based on the rise of the Ottoman Empire. Epic battles, alliances, and legacy await.</p>
-    <a class="btn" href="#episodeDropdown">▶ Watch Episodes</a>
-  </div>
-</main>
+<div class="container">
 
-<footer>
-  <p>© 2026 Orhan Ghazi Web Series | Designed for Website</p>
-</footer>
+  <a href="episode1.html" class="episode-card">Episode 1</a>
+  <a href="episode2.html" class="episode-card">Episode 2</a>
+  <a href="episode3.html" class="episode-card">Episode 3</a>
+  <a href="episode4.html" class="episode-card">Episode 4</a>
+  <a href="episode5.html" class="episode-card">Episode 5</a>
+  <a href="episode6.html" class="episode-card">Episode 6</a>
+  <a href="episode7.html" class="episode-card">Episode 7</a>
+  <a href="episode8.html" class="episode-card">Episode 8</a>
+  <a href="episode9.html" class="episode-card">Episode 9</a>
+  <a href="episode10.html" class="episode-card">Episode 10</a>
+  <a href="episode11.html" class="episode-card">Episode 11</a>
+  <a href="episode12.html" class="episode-card">Episode 12</a>
+  <a href="episode13.html" class="episode-card">Episode 13</a>
+  <a href="episode14.html" class="episode-card">Episode 14</a>
 
-<script>
-  // Mobile click support for dropdown
-  const dropbtn = document.querySelector('.dropbtn');
-  const dropdownContent = document.querySelector('.dropdown-content');
-
-  dropbtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-  });
-
-  window.addEventListener('click', function(e) {
-    if (!dropbtn.contains(e.target) && !dropdownContent.contains(e.target)) {
-      dropdownContent.style.display = 'none';
-    }
-  });
-</script>
+</div>
 
 </body>
 </html>
